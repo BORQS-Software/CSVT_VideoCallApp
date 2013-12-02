@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.borqs.videocall.VTPanelLocalWindow
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:VTScreen="http://schemas.android.com/apk/res/com.borqs.videocall"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	
+	VTScreen:left_lock_connecting="255dp"
+	VTScreen:top_lock_connecting="255dp"
+	VTScreen:height_lock_connecting="134dp"
+	VTScreen:width_lock_connecting="100dp"
+	
+	VTScreen:left_unlock_connecting="255dp"
+	VTScreen:top_unlock_connecting="255dp"
+	VTScreen:height_unlock_connecting="134dp"
+	VTScreen:width_unlock_connecting="100dp" 
+	
+	VTScreen:left_local="4dp"
+	VTScreen:top_local="90dp"
+	VTScreen:height_local="235dp"
+	VTScreen:width_local="176dp" 
+	
+	VTScreen:left_remote="255dp"
+	VTScreen:top_remote="249dp"
+	VTScreen:height_remote="134dp"
+	VTScreen:width_remote="100dp" 
+	
+	VTScreen:left_keypad_local="4dp"
+	VTScreen:top_keypad_local="90dp"
+	VTScreen:height_keypad_local="235dp"
+	VTScreen:width_keypad_local="176dp"
+	
+	VTScreen:left_keypad_remote="255dp" 
+	VTScreen:top_keypad_remote="249dp"
+	VTScreen:height_keypad_remote="134dp"
+	VTScreen:width_keypad_remote="100dp">	
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+	<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_layout_local_win"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dp"
+        android:background="@drawable/cmcc_phone_vtcall_switch_video">
+	<TextureView android:id="@+id/_local_surface"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	<ImageView android:id="@+id/surface_anim_photo"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:visibility="gone"/>	
+					
+	</FrameLayout>
+	<TextView
+		android:id="@+id/tv_shelf"
+		android:layout_width="fill_parent"
+		android:background="#FF303030"
+		android:layout_alignParentTop="true"
+		android:layout_height="wrap_content" 
+		/>
+	<TextView
+		android:id="@+id/tv_shelf_2"
+		android:layout_width="fill_parent"
+		android:background="#FF303030"
+		android:layout_alignParentBottom="true"
+		android:layout_height="wrap_content" 
+		/>
+	</RelativeLayout>
+</com.borqs.videocall.VTPanelLocalWindow>

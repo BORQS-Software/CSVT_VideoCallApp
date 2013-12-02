@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.borqs.videocall.VTPanelControlButtons xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:VTScreen="http://schemas.android.com/apk/res/com.borqs.videocall"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:layout_centerInParent="true"
+    VTScreen:height_local="40dp"
+    VTScreen:height_remote="40dp"
+    VTScreen:height_remote_only="40dp"
+    VTScreen:left_local="0dp"
+    VTScreen:left_remote="0dp"
+    VTScreen:left_remote_only="0dp"
+    VTScreen:top_local="210dp"
+    VTScreen:top_remote="210dp"
+    VTScreen:top_remote_only="210dp"
+    VTScreen:width_local="240dp"
+    VTScreen:width_remote="240dp"
+    VTScreen:width_remote_only="240dp"
+    android:background="@drawable/bg_tray"
+    android:orientation="vertical" >
+ <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divider_horizontal" >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    <FrameLayout
+        android:id="@+id/btn_set_camera"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/video_call_btn_mute_selector"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_set_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_settings" 
+            android:layout_marginTop="1dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:text="@string/setting_option"
+            android:textColor="#ffffff"
+            android:textSize="8dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cmcc_phone_line_vertical" >
+    </ImageView>
+
+    <FrameLayout
+        android:id="@+id/btn_close_camera"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/video_call_btn_record_selector"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_close_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_block_camera"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="@string/close_camera_option"
+            android:textColor="#ffffff"
+            android:textSize="8dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="2dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cmcc_phone_line_vertical" >
+    </ImageView>
+
+    <FrameLayout
+        android:id="@+id/btn_capture_photo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/video_call_btn_keypad_selector"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/img_capture_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_capture_video"
+            android:layout_marginTop="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:text="@string/capture_option"
+            android:textColor="#ffffff"
+            android:textSize="8dp" />
+    </FrameLayout>
+
+    <!-- <LinearLayout -->
+    <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:background="@drawable/cmcc_phone_vtcall_btn_bg_nor" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- for local surface -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_close_camera" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:layout_gravity="center_vertical" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_close_camera" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/ic_block_camera" > -->
+    <!-- </ImageView> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="2dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:background="@drawable/cmcc_phone_line_vertical" > -->
+    <!-- </ImageView> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_switch_camera" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:layout_gravity="center_vertical" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_switch_camera" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/cmcc_phone_vtcall_icon_switch" > -->
+    <!-- </ImageView> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="2dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:background="@drawable/cmcc_phone_line_vertical" > -->
+    <!-- </ImageView> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_set_camera" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:layout_gravity="center_vertical" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_set_camera" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/ic_settings" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="2dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:background="@drawable/cmcc_phone_line_vertical" > -->
+    <!-- </ImageView> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_swap_window_local" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_swap_window_local" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/ic_swap" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- for remote surface -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_capture_photo" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_capture_photo" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/ic_capture_video" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="2dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:background="@drawable/cmcc_phone_line_vertical" > -->
+    <!-- </ImageView> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_remote_only" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:layout_gravity="center_vertical" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_remote_only" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/ic_popout" /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="2dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:background="@drawable/cmcc_phone_line_vertical" > -->
+    <!-- </ImageView> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/btn_swap_window_remote" -->
+    <!-- android:layout_width="120dp" -->
+    <!-- android:layout_height="200dp" -->
+    <!-- android:layout_gravity="center_vertical" -->
+    <!-- android:gravity="center" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/img_swap_window_remote" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:src="@drawable/ic_swap" /> -->
+    <!-- </RelativeLayout> -->
+    <!-- </LinearLayout> -->
+ </LinearLayout>
+</com.borqs.videocall.VTPanelControlButtons>

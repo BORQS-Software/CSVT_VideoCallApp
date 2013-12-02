@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="fallback_setting_items">
+        <item>手动转语音</item>
+        <item>自动转语音</item>
+        <item>放弃转语音</item>
+    </string-array>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="fallback_setting_items">
+        <item>Fallback manually </item>
+        <item>Accept fallback request</item>
+        <item>Reject fallback request</item>
+    </string-array>
+</resources>

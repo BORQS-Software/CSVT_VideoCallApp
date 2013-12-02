@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the *contents* of 3*4 touch keypad,used in TouchDialer activity
+     The TwelveKeypad constructor inflates the LinearLayout object here,
+     and adds it (to itself) as a child. -->
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				 android:layout_width="fill_parent"
+				 android:layout_height="167dp"
+				 android:orientation="vertical"
+				 android:layout_gravity="center"	
+		  		 android:gravity="center">
+   <LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/number_background"
+		android:gravity ="center_horizontal|bottom">
+		<EditText android:id="@+id/txt_view_userinput"
+		android:layout_width="154dp"
+		android:layout_height="match_parent"
+		android:textSize="10dp"
+		android:textColor="#000000"
+		android:singleLine="true" 
+		android:cursorVisible="true"
+		android:background="@null"></EditText>
+		</LinearLayout>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="147dp">
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal">
+
+<!-- first column -->
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+		<Button android:id="@+id/touch_one"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_one_default"/>
+	    <Button android:id="@+id/touch_four"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_four_default"/>
+	    <Button android:id="@+id/touch_seven"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_seven_default"/>
+	    <Button android:id="@+id/touch_star"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	   		android:background="@drawable/video_call_keypad_star_default"/>		
+	</LinearLayout>
+	
+	<!-- second column -->
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+		<Button android:id="@+id/touch_two"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_two_default"/>
+	    <Button android:id="@+id/touch_five"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_five_default"/>
+	    <Button android:id="@+id/touch_eight"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_eight_default"/>
+	    <Button android:id="@+id/touch_zero"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_zero_default"/>		
+	</LinearLayout>
+	
+	<!-- third column -->
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="wrap_content"
+		android:orientation="vertical">
+		<Button android:id="@+id/touch_three"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_three_default"/>
+	    <Button android:id="@+id/touch_six"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_six_default"/>
+	    <Button android:id="@+id/touch_nine"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_nine_default"/>
+	    <Button android:id="@+id/touch_pound"
+            android:layout_width="71dp"
+            android:layout_height="37dp"
+	    	android:background="@drawable/video_call_keypad_pound_default"/>		
+	</LinearLayout>
+</LinearLayout>
+<ImageView android:layout_width="match_parent"
+    android:layout_height="147dp"
+    android:src="@drawable/cmcc_phone_dialer_keyboard_number"></ImageView>
+</FrameLayout>
+</LinearLayout>

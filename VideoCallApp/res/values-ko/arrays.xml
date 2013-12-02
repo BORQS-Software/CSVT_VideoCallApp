@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="fallback_setting_items">
+        <item>수동 음성전환</item>
+        <item>음성전환 수락</item>
+        <item>음성전환 거부</item>
+    </string-array>
+</resources>
